@@ -11,5 +11,5 @@
 // Some guides for coding
 // Y will always be on the left and F will be on the right.
 // The number of 'i's in the output must be >= 1
-// All the inputs are valid.
+// All the inputs are valid..
 
