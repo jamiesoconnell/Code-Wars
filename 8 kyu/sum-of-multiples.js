@@ -25,4 +25,4 @@ function sumMul(n, m) {
   }
   
   
-  //run a
+  //run a loop
