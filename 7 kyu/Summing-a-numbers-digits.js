@@ -19,4 +19,8 @@ function sumDigits(number) {
   
   //make all the nu,=mbers in the string positive
   //make it a string
-  
+  function sumDigits(number) {
+    return Math.abs(number).toString().split('').reduce(function(a,b){return +a + +b}, 0);
+  }
+
+  ///way easier
