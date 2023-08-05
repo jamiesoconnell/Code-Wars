@@ -11,3 +11,5 @@
 function printArray(array){
     return array.join(',')
   }
+
+  easy one
