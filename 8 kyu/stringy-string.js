@@ -16,7 +16,7 @@ function stringy(size) {
     for (let i = 0; i < size; i++) {
       answer += i % 2 === 0 ? '1' : '0';
     }
-  
+   
     return answer;
   }
   
