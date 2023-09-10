@@ -20,3 +20,18 @@ function solve(arr) {
   for (var i = 0; i < arr.length; i++)
     if (!arr.includes(-1 * arr[i])) return arr[i];
 }
+
+function solve(arr){
+	let notPairNumbers = 0;
+	let number = arr.reduce((total, num) => {
+		if (num >= 0)
+			notPairNumbers++
+		else
+			notPairNumbers--
+
+		return total + num;
+	}, 0)
+
+	return number / Math.abs(notPairNumbers)
+  //..
+};
