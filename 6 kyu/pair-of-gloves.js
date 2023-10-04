@@ -20,6 +20,7 @@ function numberOfPairs(gloves){
       else{
         gloveCounts[glove] = 1
       }
+      
     }
     
     let pairs = 0
