@@ -22,6 +22,7 @@
 // Input will always have the first letter capitalised and the rest lowercase (e.g. Sam).
 // The input can be modified
 
+
 function nicknameGenerator(name) {
     if (name.length < 4) {
       return "Error: Name too short";
