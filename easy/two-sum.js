@@ -51,13 +51,11 @@
 function twoSum(nums, target){
     for (let i = 0; i< nums.length; i++){
         for (let j = 0; j<nums.length; j++){
-            if(i + j === target){
-                console.log(i , j)
+            if(nums[i] + nums[j] === target){
+                return [i , j]
             }
         }
     }
 }
 
-twoSum([1,2,3,4,5], 6); //0,4
-twoSum([5,6,7,8,9], 13)//0,3
-
+console.log(twoSum([1,2,3,4,5], 9), '[3,4]');
