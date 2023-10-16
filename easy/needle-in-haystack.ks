@@ -5,6 +5,8 @@
 function needleInHaystack(needle, haystack){
   let answer = haystack.indexOf(needle)
   console.log(answer)
+
+  
 }
 
 needleInHaystack('bay', 'I love baywatch circa nineteen nineties')
