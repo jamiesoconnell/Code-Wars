@@ -10,7 +10,6 @@
 
 function uniteUnique() {
     let args = Array.from(arguments) 
-    let arr = args.reduce((a,c)=> a.concat(c))
-    let newArr = [...new Set(arr)]
-    return newArr
+    let arr = [...new Set(args.reduce((a,c)=> a.concat(c)))]
+    return arr
   }
