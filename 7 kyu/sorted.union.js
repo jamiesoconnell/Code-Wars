@@ -13,3 +13,8 @@ function uniteUnique() {
     let arr = [...new Set(args.reduce((a,c)=> a.concat(c)))]
     return arr
   }
+
+  function uniteUnique() {
+    let arr = [...new Set(Array.from(arguments) .reduce((a,c)=> a.concat(c)))]
+    return arr
+  }
