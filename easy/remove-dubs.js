@@ -12,14 +12,22 @@
 // Note that the five elements can be returned in any order.
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
-functiion removeDuplicates(nums, val){
-
-    let count = []
+function removeDuplicates(nums, val) {
+    let arr = [];
     
-    for (let i=0; i<nums.length; i++){
-      if (nums[i] !== val){
-        count.push(nums[i])
+  
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] !== val) {
+        arr.push(nums[i]);
+        
+      } else {
+        arr.push('_');
       }
     }
-    return count
+  
+    
+    return arr;
   }
+  
+  console.log(removeDuplicates([1, 2, 3, 4, 3, 2, 1], 2));
+  
