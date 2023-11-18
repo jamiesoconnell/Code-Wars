@@ -14,5 +14,7 @@ function reverse(arr){
     let answer = arr.split(' ').reverse().join(' ')
       console.log(answer)
     }
+
+    
     
     reverse("the sky is blue")
