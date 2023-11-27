@@ -5,5 +5,5 @@
 // Good luck :)
 
 function unusualFive() {
-  return 'fucku'.length
+  return 'cherry'.length
 } 
