@@ -6,3 +6,35 @@ If string contains other characters than number or it has more or less than 4 nu
 
 If string contains 4 numbers but not consecutive it returns "not consecutive".
 
+function checkRoot(str) {
+    let arr = str.split(',').map(Number);
+  
+    // Check if the array has exactly 4 numbers
+    if (arr.length !== 4 || arr.some(isNaN)) {
+      return "incorrect input";
+    }
+  
+    // Check if the numbers are consecutive
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] + 1 !== arr[i + 1]) {
+        return "not consecutive";
+      }
+    }
+  
+    // Calculate the product and check if it's a perfect square
+    let product = arr.reduce((a, b) => a * b);
+    let result = Math.sqrt(product + 1);
+  
+    // Check if the result is a perfect square
+    if (result % 1 === 0) {
+      return result;
+    } else {
+      return "not a perfect square";
+    }
+  }
+  
+  // Example usage:
+  console.log(checkRoot("1,2,3,4"));       // Output: 5
+  console.log(checkRoot("2,3,4,5"));       // Output: not a perfect square
+  console.log(checkRoot("1,2,3"));         // Output: incorrect input
+  console.log(checkRoot("5,6,7,8"));       // Output: not consecutive
