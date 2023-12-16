@@ -5,3 +5,18 @@ function take(arr, n) {
     }
     return answer
   }
+
+
+//corrected code:
+
+function take(arr, n) {
+    let answer = [];
+    if (arr.length === 0) {
+      return [];
+    } else {
+      for (let i = 0; i < Math.min(n, arr.length); i++) {
+        answer.push(arr[i]);
+      }
+    }
+    return answer;
+  }
